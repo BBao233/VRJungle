@@ -311,7 +311,7 @@
     "com.unity.xr.picoxr": {
       "version": "file:com.unity.xr.picoxr",
       "depth": 0,
-      "source": "local",
+      "source": "embedded",
       "dependencies": {
         "com.unity.xr.management": "4.0.0",
         "com.unity.xr.interaction.toolkit": "2.0.0",
