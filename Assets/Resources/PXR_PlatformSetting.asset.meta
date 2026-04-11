@@ -1,6 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 715169f2954dc8946a62929e54b01435
 NativeFormatImporter:
+=======
+<<<<<<<< Updated upstream:Assets/Samples/XR Interaction Toolkit/3.4.0/XR Device Simulator.meta
+guid: 20ec27034c355484dad25d8f5eb1d8cd
+folderAsset: yes
+DefaultImporter:
+========
+guid: 239920a2025d34a4a9d8e35b49b2126c
+NativeFormatImporter:
+>>>>>>>> Stashed changes:Assets/Resources/PXR_PlatformSetting.asset.meta
+>>>>>>> Stashed changes
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
