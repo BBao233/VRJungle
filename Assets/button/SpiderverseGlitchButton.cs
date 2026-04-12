@@ -72,7 +72,7 @@ public class SpiderverseGlitchButton : MonoBehaviour
 
     private void AnimateButton()
     {
-        float t = _timer * 8;
+        float t = _timer * 3.5f;
         float x = Mathf.Lerp(-3, 3, Mathf.PingPong(t * 0.7f, 1));
         float y = Mathf.Lerp(-2, 2, Mathf.PingPong(t * 0.5f, 1));
         float scale = Mathf.Lerp(1.08f, 1.12f, Mathf.PingPong(t * 0.3f, 1));
@@ -83,17 +83,17 @@ public class SpiderverseGlitchButton : MonoBehaviour
 
     private void AnimateTextGlitch()
     {
-        _glitchTimer1 += Time.deltaTime * 12f;
-        _glitchTimer2 += Time.deltaTime * 10f;
+        _glitchTimer1 += Time.deltaTime * 5f;
+        _glitchTimer2 += Time.deltaTime * 4f;
 
         glitchLayer1.rectTransform.anchoredPosition = new Vector2(
-            Mathf.Lerp(-4, 4, Mathf.PingPong(_glitchTimer1, 1)),
-            Mathf.Lerp(-2, 2, Mathf.PingPong(_glitchTimer1, 1))
+            Mathf.Lerp(-2, 2, Mathf.PingPong(_glitchTimer1, 1)),
+            Mathf.Lerp(-1, 1, Mathf.PingPong(_glitchTimer1, 1))
         );
 
         glitchLayer2.rectTransform.anchoredPosition = new Vector2(
-            Mathf.Lerp(4, -4, Mathf.PingPong(_glitchTimer2, 1)),
-            Mathf.Lerp(2, -2, Mathf.PingPong(_glitchTimer2, 1))
+            Mathf.Lerp(2, -2, Mathf.PingPong(_glitchTimer2, 1)),
+            Mathf.Lerp(1, -1, Mathf.PingPong(_glitchTimer2, 1))
         );
     }
 
