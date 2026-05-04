@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\assets\\test\\fonts\\\u4EFB\u52A1\u5BF9\u8BDD.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\test\\fonts\\\u4EFB\u52A1\u5BF9\u8BDD.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Temp\\Compiled-Standard.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\Compiled-Standard.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|D:\\code_2526\\Spring_semester\\VR\\VRJungle\\assets\\button\\spiderverseglitchbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\button\\spiderverseglitchbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\test112\\SquareBorderTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\test112\\SquareBorderTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "\u4EFB\u52A1\u5BF9\u8BDD.txt",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\test\\Fonts\\\u4EFB\u52A1\u5BF9\u8BDD.txt",
+              "RelativeDocumentMoniker": "Assets\\test\\Fonts\\\u4EFB\u52A1\u5BF9\u8BDD.txt",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\test\\Fonts\\\u4EFB\u52A1\u5BF9\u8BDD.txt",
+              "RelativeToolTip": "Assets\\test\\Fonts\\\u4EFB\u52A1\u5BF9\u8BDD.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwIAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-13T15:00:19.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Compiled-Standard.shader",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Temp\\Compiled-Standard.shader",
+              "RelativeDocumentMoniker": "Temp\\Compiled-Standard.shader",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Temp\\Compiled-Standard.shader",
+              "RelativeToolTip": "Temp\\Compiled-Standard.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-04-13T13:30:16.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpiderverseGlitchButton.cs",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\button\\SpiderverseGlitchButton.cs",
+              "RelativeDocumentMoniker": "Assets\\button\\SpiderverseGlitchButton.cs",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\button\\SpiderverseGlitchButton.cs",
+              "RelativeToolTip": "Assets\\button\\SpiderverseGlitchButton.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswE0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:45:17.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SquareBorderTrigger.cs",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\test112\\SquareBorderTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\test112\\SquareBorderTrigger.cs",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\test112\\SquareBorderTrigger.cs",
+              "RelativeToolTip": "Assets\\test112\\SquareBorderTrigger.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAswAUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:20:59.059Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
