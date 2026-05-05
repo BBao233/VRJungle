@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: c58903281aafcb14cae432f08bad025a
+=======
+<<<<<<<< Updated upstream:Assets/Resources/roles/胖胖/Meshy_AI_Armored_Panda_biped 1/Meshy_AI_Armored_Panda_biped_texture_0_metallic.png.meta
+guid: 309387a802684e748bdddecc67d2c139
+========
+guid: 1e74fcbdcb2e3aa429d60a0631dd36ed
+>>>>>>>> Stashed changes:Assets/Resources/roles/诺亚/Meshy_AI_诺亚_biped_texture_0_metallic.png.meta
+>>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

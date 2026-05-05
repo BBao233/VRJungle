@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Resources/roles/胖胖/Meshy_AI_Armored_Panda_biped/Meshy_AI_Armored_Panda_biped_Animation_Shrug_withSkin.fbx.meta
+guid: 63ab84254d035df4f8d3af0f67ffc14f
+=======
+guid: 6e6db855a34641746b8105f8e92f9a86
+>>>>>>> Stashed changes:Assets/Resources/roles/胖胖/Meshy_AI_Armored_Panda_biped 1/Meshy_AI_Armored_Panda_biped_Animation_Shrug_withSkin.fbx.meta
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+<<<<<<< Updated upstream:Assets/Resources/roles/胖胖/Meshy_AI_Armored_Panda_biped/Meshy_AI_Armored_Panda_biped_Animation_Shrug_withSkin.fbx.meta
+    skeleton: []
+=======
+    skeleton:
+    - name: Meshy_AI_Armored_Panda_biped_Animation_Shrug_withSkin(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: Meshy_AI_Armored_Panda_biped_Animation_Shrug_withSkin(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Armature
+      position: {x: 0.004468392, y: -0.0322024, z: 0.696826}
+      rotation: {x: -0.34974203, y: 0.42955098, z: 0.83096135, w: -0.05166825}
+      scale: {x: 1.0000012, y: 1.0000004, z: 1.0000007}
+    - name: LeftUpLeg
+      parentName: Hips
+      position: {x: 0.20270568, y: -0.009954624, z: 0.10595083}
+      rotation: {x: -0.46263343, y: -0.29462028, z: 0.7824377, w: -0.29489067}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000004}
+    - name: LeftLeg
+      parentName: LeftUpLeg
+      position: {x: -0, y: 0.32011637, z: 0.000000009536743}
+      rotation: {x: 0.21544121, y: -0.2101192, z: -0.14689589, w: 0.94226146}
+      scale: {x: 0.99999946, y: 1.000001, z: 1.0000005}
+    - name: LeftFoot
+      parentName: LeftLeg
+      position: {x: -0.000000007525086, y: 0.2257691, z: 0.000000005364418}
+      rotation: {x: -0.6147108, y: 0.04663104, z: 0.07257961, w: 0.7840207}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000007}
+    - name: LeftToeBase
+      parentName: LeftFoot
+      position: {x: -0.0000000055879354, y: 0.16702138, z: 0.000000011324882}
+      rotation: {x: -0.30800983, y: 0.020523483, z: 0.006646076, w: 0.9511386}
+      scale: {x: 0.99999994, y: 1.0000008, z: 0.99999994}
+    - name: RightUpLeg
+      parentName: Hips
+      position: {x: -0.112489104, y: -0.09930554, z: -0.15599659}
+      rotation: {x: -0.080125414, y: -0.3057011, z: 0.9397369, w: -0.13046587}
+      scale: {x: 0.9999997, y: 0.9999996, z: 1}
+    - name: RightLeg
+      parentName: RightUpLeg
+      position: {x: -0.000000025629996, y: 0.31566155, z: 0.00000002026558}
+      rotation: {x: 0.22660115, y: 0.23723513, z: 0.17167129, w: 0.9289243}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: RightFoot
+      parentName: RightLeg
+      position: {x: 0.000000022053719, y: 0.22908793, z: 0.0000000023841857}
+      rotation: {x: -0.61955667, y: -0.07477284, z: -0.11834332, w: 0.7723688}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000005}
+    - name: RightToeBase
+      parentName: RightFoot
+      position: {x: 4.4703483e-10, y: 0.17403783, z: -0.000000015497207}
+      rotation: {x: -0.3109194, y: -0.027323268, z: -0.008942265, w: 0.9500014}
+      scale: {x: 0.9999997, y: 1, z: 0.99999946}
+    - name: Spine02
+      parentName: Hips
+      position: {x: -0.09021664, y: 0.10926008, z: 0.071239635}
+      rotation: {x: 0.22240949, y: -0.87702125, z: -0.32568112, w: -0.27440786}
+      scale: {x: 0.9999998, y: 0.99999934, z: 0.9999998}
+    - name: Spine01
+      parentName: Spine02
+      position: {x: 7.636845e-10, y: 0.15859346, z: -0.0000000032223761}
+      rotation: {x: -0, y: -0.000000029802319, z: -0.00000004470348, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Spine
+      parentName: Spine01
+      position: {x: -0.000000007046037, y: 0.15859345, z: -0.000000015776605}
+      rotation: {x: -0.09001908, y: -0.0058417213, z: 0.0055212704, w: 0.99590766}
+      scale: {x: 0.9999998, y: 0.9999999, z: 1.0000001}
+    - name: LeftShoulder
+      parentName: Spine
+      position: {x: -0.105283536, y: 0.028793858, z: -0.01109223}
+      rotation: {x: 0.5501931, y: -0.57648337, z: 0.43028438, w: 0.42404005}
+      scale: {x: 0.99999994, y: 1, z: 1.0000002}
+    - name: LeftArm
+      parentName: LeftShoulder
+      position: {x: 0.0000000140070915, y: 0.42217708, z: 0.000000038500875}
+      rotation: {x: 0.004773317, y: -0.52821517, z: -0.025832763, w: 0.84870416}
+      scale: {x: 1, y: 0.9999998, z: 0.9999996}
+    - name: LeftForeArm
+      parentName: LeftArm
+      position: {x: -0.0000000500679, y: 0.25283462, z: 0.000000014305114}
+      rotation: {x: -0.045852635, y: 0.2060006, z: 0.016398987, w: 0.9773394}
+      scale: {x: 0.9999998, y: 0.99999946, z: 1.0000001}
+    - name: LeftHand
+      parentName: LeftForeArm
+      position: {x: 0.0000000333786, y: 0.2355237, z: 0.0000000333786}
+      rotation: {x: 0.055437494, y: -0.16382948, z: -0.23384602, w: 0.9567668}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000002}
+    - name: RightShoulder
+      parentName: Spine
+      position: {x: 0.10396889, y: 0.02635734, z: -0.01435939}
+      rotation: {x: -0.5499627, y: -0.5767032, z: 0.44381264, w: -0.4098596}
+      scale: {x: 1.0000001, y: 1, z: 1.0000007}
+    - name: RightArm
+      parentName: RightShoulder
+      position: {x: 0.000000032186506, y: 0.41591942, z: -0.00000019490719}
+      rotation: {x: -0.004657776, y: -0.52857816, z: -0.02598916, w: -0.84847397}
+      scale: {x: 0.9999997, y: 1, z: 1}
+    - name: RightForeArm
+      parentName: RightArm
+      position: {x: -0.000000047683713, y: 0.25284052, z: -0.0000000333786}
+      rotation: {x: -0.04610047, y: -0.20028925, z: -0.01639062, w: 0.9785143}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000008}
+    - name: RightHand
+      parentName: RightForeArm
+      position: {x: -0.000000038146972, y: 0.23143184, z: -0.000000047683713}
+      rotation: {x: 0.059792705, y: 0.15072292, z: 0.19869906, w: 0.96655375}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: neck
+      parentName: Spine
+      position: {x: 0.0013147081, y: 0.13236563, z: 0.025451757}
+      rotation: {x: 0.09485698, y: 0.0043909512, z: -0.0044803233, w: 0.9954712}
+      scale: {x: 1, y: 1.0000005, z: 1}
+    - name: Head
+      parentName: neck
+      position: {x: 0.0000000027939677, y: 0.09272509, z: 0.000000011473894}
+      rotation: {x: 0.3006475, y: -0.000004273839, z: -0.001396913, w: 0.95373434}
+      scale: {x: 1, y: 1.0000005, z: 0.9999997}
+    - name: head_end
+      parentName: Head
+      position: {x: -0.0018003508, y: 0.60475373, z: -0.38545638}
+      rotation: {x: -0.2799332, y: 0.00000004510456, z: 0.001307481, w: 0.96001863}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: headfront
+      parentName: Head
+      position: {x: 0.0018003499, y: 0.22436798, z: 0.38545626}
+      rotation: {x: 0.49846143, y: -0.00000002765523, z: -0.0023282042, w: 0.8669088}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+    - name: char1
+      parentName: Meshy_AI_Armored_Panda_biped_Animation_Shrug_withSkin(Clone)
+      position: {x: -0.000000009536743, y: 0.000000028610229, z: 0.00000002503395}
+      rotation: {x: -0.0000000074505784, y: -1.540744e-33, z: 0.0000000037252903,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+>>>>>>> Stashed changes:Assets/Resources/roles/胖胖/Meshy_AI_Armored_Panda_biped 1/Meshy_AI_Armored_Panda_biped_Animation_Shrug_withSkin.fbx.meta
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
