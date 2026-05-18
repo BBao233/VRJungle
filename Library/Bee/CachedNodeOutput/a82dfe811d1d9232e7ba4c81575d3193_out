@@ -1,0 +1,11 @@
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Sample\VirtualDisplay\PXR\VirtualDisplayDemo.cs(12,20): warning CS0108: 'VirtualDisplayDemo.tag' hides inherited member 'Component.tag'. Use the new keyword if hiding was intended.
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Sample\VirtualDisplay\PXR\VirtualDisplayEvent.cs(19,19): warning CS0108: 'VirtualDisplayEvent.tag' hides inherited member 'Component.tag'. Use the new keyword if hiding was intended.
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Sample\CameraRendering\PXR\EnterpriseAPI.cs(14,20): warning CS0108: 'EnterpriseAPI.tag' hides inherited member 'Component.tag'. Use the new keyword if hiding was intended.
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Scripts\Plugin\PXR_EnterprisePlugin.cs(1637,17): warning CS0219: The variable 'sensorFrameIndex' is assigned but its value is never used
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Scripts\Plugin\PXR_EnterprisePlugin.cs(2247,22): warning CS0219: The variable 'value' is assigned but its value is never used
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Scripts\Plugin\PXR_EnterprisePlugin.cs(2291,20): warning CS0219: The variable 'value' is assigned but its value is never used
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Scripts\Plugin\PXR_EnterprisePlugin.cs(2994,13): warning CS0162: Unreachable code detected
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Scripts\Plugin\PXR_EnterprisePlugin.cs(3101,22): warning CS0219: The variable 'value' is assigned but its value is never used
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Scripts\Plugin\PXR_EnterprisePlugin.cs(3361,17): warning CS0219: The variable 'sensorFrameIndex' is assigned but its value is never used
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Sample\CameraRendering\PXR\EnterpriseAPI.cs(25,18): warning CS0414: The field 'EnterpriseAPI.d' is assigned but its value is never used
+PICO Unity Integration SDK-3.4.0-20260226\Enterprise\Sample\VirtualDisplay\PXR\VirtualDisplayDemo.cs(15,18): warning CS0414: The field 'VirtualDisplayDemo.isBind' is assigned but its value is never used
