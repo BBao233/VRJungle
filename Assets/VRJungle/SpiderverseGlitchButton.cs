@@ -13,14 +13,26 @@ public class SpiderverseGlitchButton : MonoBehaviour
     public TextMeshProUGUI glitchLayer1;
     public TextMeshProUGUI glitchLayer2;
 
+    [Header("特效")]
+    public RawImage noiseImage;
+    public Image sliceLine;
+
+    [Header("噪声")]
+    [Range(0.01f, 0.3f)] public float noiseDensity = 0.1f;
+    [Range(0.1f, 1f)] public float noiseAlpha = 0.3f;
+    public Color noiseColor = Color.white;
+
     private Button _button;
     private RectTransform _buttonRect;
-
-    private bool _alwaysOn = true;
-
+    private RectTransform _noiseRect;
+    private bool _isHover;
     private float _timer;
     private float _glitchTimer1;
     private float _glitchTimer2;
+
+    // 悬浮后延迟多久才允许 sliceLine 显示
+    private float _sliceDelay = 0.1f;
+    private float _hoverTimer;
 
     private Vector3 _originalScale;
     private Vector2 _originalPosition;
@@ -29,29 +41,65 @@ public class SpiderverseGlitchButton : MonoBehaviour
     {
         _button = GetComponent<Button>();
         _buttonRect = GetComponent<RectTransform>();
+        _noiseRect = noiseImage.GetComponent<RectTransform>();
 
         _originalScale = _buttonRect.localScale;
         _originalPosition = _buttonRect.anchoredPosition;
 
-        // 常驻开启 glitch 层
+        _noiseRect.sizeDelta = _buttonRect.sizeDelta;
+
+        glitchLayer1.gameObject.SetActive(false);
+        glitchLayer2.gameObject.SetActive(false);
+        noiseImage.gameObject.SetActive(false);
+        sliceLine.gameObject.SetActive(false);
+
+        GenerateNoise();
+    }
+
+    public void OnPointerEnter()
+    {
+        _isHover = true;
+        _timer = 0;
+        _hoverTimer = 0; // 重置延迟计时器
+
         glitchLayer1.gameObject.SetActive(true);
         glitchLayer2.gameObject.SetActive(true);
+        noiseImage.gameObject.SetActive(true);
+        sliceLine.gameObject.SetActive(true);
+
+        // 刚悬浮时，强制完全透明
+        sliceLine.color = Color.clear;
+    }
+
+    public void OnPointerExit()
+    {
+        _isHover = false;
+
+        glitchLayer1.gameObject.SetActive(false);
+        glitchLayer2.gameObject.SetActive(false);
+        noiseImage.gameObject.SetActive(false);
+        sliceLine.gameObject.SetActive(false);
+
+        _buttonRect.anchoredPosition = _originalPosition;
+        _buttonRect.localScale = _originalScale;
     }
 
     private void Update()
     {
-        if (!_alwaysOn) return;
+        if (!_isHover) return;
 
         _timer += Time.deltaTime;
+        _hoverTimer += Time.deltaTime;
 
         AnimateButton();
         AnimateTextGlitch();
+        AnimateNoise();
+        AnimateSlice();
     }
 
     private void AnimateButton()
     {
-        float t = _timer * 3.5f;
-
+        float t = _timer * 8;
         float x = Mathf.Lerp(-3, 3, Mathf.PingPong(t * 0.7f, 1));
         float y = Mathf.Lerp(-2, 2, Mathf.PingPong(t * 0.5f, 1));
         float scale = Mathf.Lerp(1.08f, 1.12f, Mathf.PingPong(t * 0.3f, 1));
@@ -62,17 +110,74 @@ public class SpiderverseGlitchButton : MonoBehaviour
 
     private void AnimateTextGlitch()
     {
-        _glitchTimer1 += Time.deltaTime * 5f;
-        _glitchTimer2 += Time.deltaTime * 4f;
+        _glitchTimer1 += Time.deltaTime * 12;
+        _glitchTimer2 += Time.deltaTime * 10;
 
         glitchLayer1.rectTransform.anchoredPosition = new Vector2(
-            Mathf.Lerp(-2, 2, Mathf.PingPong(_glitchTimer1, 1)),
-            Mathf.Lerp(-1, 1, Mathf.PingPong(_glitchTimer1, 1))
+            Mathf.Lerp(-4, 4, Mathf.PingPong(_glitchTimer1, 1)),
+            Mathf.Lerp(-2, 2, Mathf.PingPong(_glitchTimer1, 1))
         );
 
         glitchLayer2.rectTransform.anchoredPosition = new Vector2(
-            Mathf.Lerp(2, -2, Mathf.PingPong(_glitchTimer2, 1)),
-            Mathf.Lerp(1, -1, Mathf.PingPong(_glitchTimer2, 1))
+            Mathf.Lerp(4, -4, Mathf.PingPong(_glitchTimer2, 1)),
+            Mathf.Lerp(2, -2, Mathf.PingPong(_glitchTimer2, 1))
         );
+    }
+
+    private void AnimateNoise()
+    {
+        float ox = Mathf.Lerp(-0.2f, 0.2f, Mathf.PingPong(_timer * 20, 1));
+        float oy = Mathf.Lerp(-0.2f, 0.2f, Mathf.PingPong(_timer * 18, 1));
+        noiseImage.uvRect = new Rect(ox, oy, 1, 1);
+    }
+
+    // ✅ ✅ ✅ 绝对不闪白的最终版
+    private void AnimateSlice()
+    {
+        // 核心：悬浮后的前 0.1 秒，强制不显示！
+        if (_hoverTimer < _sliceDelay)
+        {
+            sliceLine.color = Color.clear;
+            return;
+        }
+
+        // 正常动画
+        sliceLine.color = Color.clear;
+        float t = Mathf.PingPong((_timer - _sliceDelay) * 0.4f, 1);
+        float h = _noiseRect.sizeDelta.y;
+        float y = Mathf.Lerp(-h / 2 - 10, h / 2 + 10, t);
+        sliceLine.rectTransform.anchoredPosition = new Vector2(0, y);
+
+        if (t > 0.02f && t < 0.06f)
+        {
+            sliceLine.color = new Color(1, 1, 1, 0.6f);
+        }
+    }
+
+    private void GenerateNoise()
+    {
+        int size = 128;
+        Texture2D tex = new Texture2D(size, size);
+        tex.filterMode = FilterMode.Point;
+        tex.wrapMode = TextureWrapMode.Repeat;
+
+        Color[] pixels = new Color[size * size];
+        for (int i = 0; i < pixels.Length; i++)
+        {
+            if (Random.value < noiseDensity)
+                pixels[i] = noiseColor;
+            else
+                pixels[i] = Color.clear;
+        }
+
+        tex.SetPixels(pixels);
+        tex.Apply();
+        noiseImage.texture = tex;
+        noiseImage.color = new Color(1, 1, 1, noiseAlpha);
+    }
+
+    private void OnClick()
+    {
+        Debug.Log("Click!");
     }
 }
