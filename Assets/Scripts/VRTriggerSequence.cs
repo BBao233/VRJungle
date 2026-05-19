@@ -22,6 +22,9 @@ public class VRTriggerSequence : MonoBehaviour
     [Header("Audio A")]
     public AudioSource audioSourceA;
 
+    [Header("Run Audio")]
+    public AudioSource runAudioSource;
+
     [Header("Boss Animator")]
     public Animator objectAnimator;
 
@@ -32,11 +35,9 @@ public class VRTriggerSequence : MonoBehaviour
     public string runAnimation = "RunForward";
     public string attackAnimation = "Attack1";
 
-    [Header("Animation Durations")]
+    [Header("Run Duration")]
     public float runDuration = 2f;
 
-    // ⚠️ 这里必须填“攻击真正命中的时间”
-    // 不是动画总长度
     [Header("Attack Hit Time")]
     public float attackHitTime = 0.6f;
 
@@ -116,10 +117,17 @@ public class VRTriggerSequence : MonoBehaviour
             objectAnimator.transform.LookAt(lookPos);
         }
 
-        // 5️⃣ RunForward + 前冲
+        // 5️⃣ RunForward + 前冲 + 跑步音效
         if (objectAnimator != null)
         {
             objectAnimator.Play(runAnimation);
+
+            // 播放跑步音效
+            if (runAudioSource != null)
+            {
+                runAudioSource.loop = true;
+                runAudioSource.Play();
+            }
 
             float elapsed = 0f;
 
@@ -134,6 +142,12 @@ public class VRTriggerSequence : MonoBehaviour
 
                 yield return null;
             }
+
+            // 停止跑步音效
+            if (runAudioSource != null)
+            {
+                runAudioSource.Stop();
+            }
         }
 
         // 6️⃣ Attack动画 + 音频B 同时开始
@@ -147,7 +161,7 @@ public class VRTriggerSequence : MonoBehaviour
             audioSourceB.Play();
         }
 
-        // ✅ 只等待攻击命中时间
+        // 等待攻击真正命中时间
         yield return new WaitForSeconds(
             attackHitTime
         );
@@ -189,6 +203,7 @@ public class VRTriggerSequence : MonoBehaviour
                 objectAnimator.transform.position
             ).normalized;
 
+        // 去除上下方向
         knockDirection.y = 0f;
 
         knockDirection.Normalize();
@@ -215,7 +230,7 @@ public class VRTriggerSequence : MonoBehaviour
                     t
                 );
 
-            // 真正抛物线
+            // 抛物线高度
             float parabola =
                 4f *
                 knockbackHeight *

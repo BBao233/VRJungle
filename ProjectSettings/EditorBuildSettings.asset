@@ -7,10 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
     path: Assets/Scenes/beforeriver.unity
     guid: 50b096da011d99d4488b4979180dae3b
+  - enabled: 1
+    path: Assets/Scenes/shooting.unity
+    guid: 9580142918bdcf84f8488e3fbfc23009
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: c0bf1a34b1f184b499923d8ecbdc99cb,
       type: 2}
