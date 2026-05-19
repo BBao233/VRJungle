@@ -44,7 +44,7 @@ public class PlayerMovement_run : MonoBehaviour
         IsGroundedLand();
         Movement();
         // 【可选】保留键盘Space键，方便测试
-        // HandleJumpInput();
+         HandleJumpInput();
         playerAnimator.SetBool("IsGrounded", isLand);
         if (isLand && !wasGrounded)
         {
@@ -151,7 +151,7 @@ public class PlayerMovement_run : MonoBehaviour
     }
 
     // 【可选】保留原来的键盘跳跃逻辑，方便测试
-    /*
+    
     void HandleJumpInput()
     {
         if (!isLand && canDoubleJump && Input.GetKeyDown(KeyCode.Space))
@@ -186,5 +186,5 @@ public class PlayerMovement_run : MonoBehaviour
             CancelCharge();
         }
     }
-    */
+    
 }

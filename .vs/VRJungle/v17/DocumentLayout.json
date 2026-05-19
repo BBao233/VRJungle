@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|D:\\code_2526\\Spring_semester\\VR\\VRJungle\\assets\\scripts\\button\\buttoncontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\button\\buttoncontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7E7BE4D-BC6C-11EF-E978-B479CAAADD65}|PICO.Platform.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\pico unity integration sdk-3.4.0-20260226\\platform\\scripts\\clib\\clib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7E7BE4D-BC6C-11EF-E978-B479CAAADD65}|PICO.Platform.csproj|solutionrelative:pico unity integration sdk-3.4.0-20260226\\platform\\scripts\\clib\\clib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD3596F-03AB-7BCB-0255-AB5E06FBC18B}|Unity.XR.PICO.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\pico unity integration sdk-3.4.0-20260226\\runtime\\scripts\\hand\\pxr_handpose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD3596F-03AB-7BCB-0255-AB5E06FBC18B}|Unity.XR.PICO.csproj|solutionrelative:pico unity integration sdk-3.4.0-20260226\\runtime\\scripts\\hand\\pxr_handpose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\assets\\scripts\\playermove\\playermovement_run.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove\\playermovement_run.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\assets\\scripts\\materialchange\\capturematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\materialchange\\capturematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\assets\\scripts\\button\\buttoncontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\button\\buttoncontroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\assets\\scripts\\deathjudge\\death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|D:\\code_2526\\Spring_semester\\VR\\VRJungle\\assets\\scripts\\deathjudge\\death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deathjudge\\death.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\code_2526\\spring_semester\\vr\\vrjungle\\assets\\scripts\\playermove\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\playermove\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\PlayerMove\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PlayerMove\\PlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +38,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "CLIB.cs",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\PICO Unity Integration SDK-3.4.0-20260226\\Platform\\Scripts\\CLIB\\CLIB.cs",
+              "RelativeDocumentMoniker": "PICO Unity Integration SDK-3.4.0-20260226\\Platform\\Scripts\\CLIB\\CLIB.cs",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\PICO Unity Integration SDK-3.4.0-20260226\\Platform\\Scripts\\CLIB\\CLIB.cs",
+              "RelativeToolTip": "PICO Unity Integration SDK-3.4.0-20260226\\Platform\\Scripts\\CLIB\\CLIB.cs",
+              "ViewState": "AgIAAAgiAAAAAAAAAAAAAAsiAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T12:19:35.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PXR_HandPose.cs",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\PICO Unity Integration SDK-3.4.0-20260226\\Runtime\\Scripts\\Hand\\PXR_HandPose.cs",
+              "RelativeDocumentMoniker": "PICO Unity Integration SDK-3.4.0-20260226\\Runtime\\Scripts\\Hand\\PXR_HandPose.cs",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\PICO Unity Integration SDK-3.4.0-20260226\\Runtime\\Scripts\\Hand\\PXR_HandPose.cs",
+              "RelativeToolTip": "PICO Unity Integration SDK-3.4.0-20260226\\Runtime\\Scripts\\Hand\\PXR_HandPose.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwG8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T12:12:44.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerMovement_run.cs",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\PlayerMove\\PlayerMovement_run.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove\\PlayerMovement_run.cs",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\PlayerMove\\PlayerMovement_run.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMove\\PlayerMovement_run.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAUwLwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T12:11:53.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CaptureMaterial.cs",
               "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\MaterialChange\\CaptureMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MaterialChange\\CaptureMaterial.cs",
@@ -43,20 +94,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ButtonControll.cs",
               "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\Button\\ButtonControll.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Button\\ButtonControll.cs",
               "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\Button\\ButtonControll.cs",
               "RelativeToolTip": "Assets\\Scripts\\Button\\ButtonControll.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswFcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T10:11:11.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Death.cs",
               "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\DeathJudge\\Death.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DeathJudge\\Death.cs",
@@ -69,16 +120,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
               "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T10:09:15.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T10:09:15.309Z"
             }
           ]
         }
