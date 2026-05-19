@@ -8,7 +8,7 @@ public class Death : MonoBehaviour
 {
     public float targetHeight=-10f;
     public GameObject PlayerPo;
-    PlayerMovement playerMove;
+    PlayerMovement_run playerMove;
     CaptureMaterial capture_material;
     public Canvas deathCanvas;
     SkinnedMeshRenderer player1Render;
@@ -22,7 +22,7 @@ public class Death : MonoBehaviour
         playerbodyRender = GameObject.Find("body1").GetComponent<SkinnedMeshRenderer>();
         if (deathCanvas != null)
         { deathCanvas.enabled = false; }
-        playerMove=GetComponent<PlayerMovement>();
+        playerMove=GetComponent<PlayerMovement_run>();
         capture_material=GetComponent<CaptureMaterial>();
         playerPo = PlayerPo.transform.position;
     }

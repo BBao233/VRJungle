@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ButtonControll : MonoBehaviour
 {  
     public GameObject Player;
-    PlayerMovement playerMove;
+    PlayerMovement_run playerMove;
     CaptureMaterial capture_material;
 
     // ÓÎÏ·×´Ì¬Ã¶¾Ù
@@ -21,7 +21,7 @@ public class ButtonControll : MonoBehaviour
 
     private void Awake()
     {
-        playerMove = Player.GetComponent<PlayerMovement>();
+        playerMove = Player.GetComponent<PlayerMovement_run>();
         capture_material = Player.GetComponent<CaptureMaterial>();
         
     }

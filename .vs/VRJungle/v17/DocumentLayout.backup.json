@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|d:\\code_2526\\spring_semester\\vr\\vrjungle\\assets\\scripts\\playermove\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80FF43A0-5EAC-0472-24F3-E005632EFA84}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
+              "ToolTip": "D:\\code_2526\\Spring_semester\\VR\\VRJungle\\Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMove\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T10:09:15.309Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

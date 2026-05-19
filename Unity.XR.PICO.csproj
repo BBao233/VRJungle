@@ -177,8 +177,8 @@
     <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\BuildingBlocks\PXR_ObjectTrackingBlock.cs" />
     <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Scripts\PXR_Settings.cs" />
     <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Scripts\Hand\PXR_HandPosePreview.cs" />
-    <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Debugger\Scripts\Interaction\PXR_FolderButton.cs" />
     <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Scripts\Features\PXR_System.cs" />
+    <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Debugger\Scripts\Interaction\PXR_FolderButton.cs" />
     <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Scripts\Features\PXR_CompositionLayer.cs" />
     <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Debugger\Scripts\UI\Log\PXR_MessageController.cs" />
     <Compile Include="PICO Unity Integration SDK-3.4.0-20260226\Runtime\Scripts\SecureMR\Component\Tensor\Data\PXR_SecureMRTensorData.cs" />

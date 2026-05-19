@@ -395,7 +395,7 @@
 "Assets/Scripts/DeathJudge/Death.cs"
 "Assets/Scripts/LoadScene/LoadScenes.cs"
 "Assets/Scripts/MaterialChange/CaptureMaterial.cs"
-"Assets/Scripts/PlayerMove/PlayerMovement.cs"
+"Assets/Scripts/PlayerMove/PlayerMovement_run.cs"
 "Assets/Scripts/Sound/Sound.cs"
 "Assets/Scripts/TimeCounter/TimeCounter.cs"
 "Assets/Scripts/XR/PassThroughManager.cs"

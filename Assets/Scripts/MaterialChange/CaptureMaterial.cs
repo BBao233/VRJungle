@@ -40,7 +40,7 @@ public class CaptureMaterial : MonoBehaviour
     {
         if (changeColorAnimator != null)
         {
-            PlayerMovement.JudgeCanrole(changeColorAnimator, 0.5f);
+            PlayerMovement_run.JudgeCanrole(changeColorAnimator, 0.5f);
             changeMaterial();
         }
     }

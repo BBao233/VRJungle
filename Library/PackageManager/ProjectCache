@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639147304874614537
-    m_Hash: 1001465881
+      ticks: 639147817002741663
+    m_Hash: 141896976
   m_LockFileStatus:
     m_FilePath: D:/code_2526/Spring_semester/VR/VRJungle/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639147304874654756
-    m_Hash: 2486045080
+      ticks: 639147817002751650
+    m_Hash: 2426823217
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -24,7 +24,7 @@ m_LocalPackages:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639147282237734454
+      ticks: 639147817002711646
     m_Hash: 3684465902
   - m_FilePath: D:\code_2526\Spring_semester\VR\VRJungle\PICO Unity Integration SDK-3.4.0-20260226
     m_PathExists: 1
