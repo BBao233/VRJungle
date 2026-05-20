@@ -9,7 +9,7 @@ public class BossSpawnerSequence : MonoBehaviour
     [Header("Boss Settings")]
     public GameObject bossPrefab;
 
-    // 玩家（建议XR Origin）
+    [Header("Player")]
     public Transform player;
 
     [Header("Random Spawn Points")]
@@ -19,17 +19,21 @@ public class BossSpawnerSequence : MonoBehaviour
     [Header("Spawn Settings")]
     public int totalBossCount = 5;
 
-    // 每只Boss生成间隔
     public float spawnInterval = 1f;
 
     [Header("Boss Move")]
     public float moveSpeed = 2f;
 
-    // Boss移动多久后死亡
-    public float moveDuration = 3f;
+    public float moveDuration = 6f;
+
+    [Header("Ground Detect")]
+    public float groundRayHeight = 5f;
+
+    public float groundRayDistance = 20f;
 
     [Header("Animation Names")]
     public string runAnimation = "RunForward";
+
     public string deathAnimation = "Death";
 
     [Header("Death Animation Duration")]
@@ -65,6 +69,10 @@ public class BossSpawnerSequence : MonoBehaviour
     public string nextSceneName;
 
     private int finishedBossCount = 0;
+
+    // 已死亡Boss
+    private HashSet<GameObject> deadBosses =
+        new HashSet<GameObject>();
 
     void Start()
     {
@@ -120,13 +128,13 @@ public class BossSpawnerSequence : MonoBehaviour
 
     void SpawnBoss()
     {
-        if (bossPrefab == null ||
+        if (
+            bossPrefab == null ||
             player == null ||
-            spawnPoints.Count == 0)
+            spawnPoints.Count == 0
+        )
         {
-            Debug.LogError(
-                "Spawner缺少引用"
-            );
+            Debug.LogError("Spawner缺少引用");
 
             return;
         }
@@ -146,6 +154,9 @@ public class BossSpawnerSequence : MonoBehaviour
                 randomSpawn.position,
                 randomSpawn.rotation
             );
+
+        // 设置Tag
+        boss.tag = "Boss";
 
         // 随机颜色
         ApplyRandomColor(boss);
@@ -171,11 +182,9 @@ public class BossSpawnerSequence : MonoBehaviour
 
         foreach (Renderer renderer in renderers)
         {
-            // 创建材质实例
             renderer.material =
                 new Material(renderer.material);
 
-            // 兼容URP/HDRP
             if (
                 renderer.material.HasProperty(
                     "_BaseColor"
@@ -203,22 +212,17 @@ public class BossSpawnerSequence : MonoBehaviour
         AudioSource audioSource =
             boss.GetComponent<AudioSource>();
 
-        // 朝向玩家
-        Vector3 lookPos = player.position;
-
-        lookPos.y = boss.transform.position.y;
-
-        boss.transform.LookAt(lookPos);
-
         // 播放RunForward
         if (animator != null)
         {
             animator.Play(runAnimation);
         }
 
-        // 播放跑步音效（循环）
-        if (audioSource != null &&
-            runClip != null)
+        // 播放跑步音效
+        if (
+            audioSource != null &&
+            runClip != null
+        )
         {
             audioSource.clip = runClip;
 
@@ -230,17 +234,89 @@ public class BossSpawnerSequence : MonoBehaviour
         float elapsed = 0f;
 
         // 持续移动
-        while (elapsed < moveDuration)
+        while (
+            elapsed < moveDuration &&
+            !deadBosses.Contains(boss)
+        )
         {
             elapsed += Time.deltaTime;
 
-            boss.transform.position +=
+            // 实时朝向玩家
+            Vector3 lookPos =
+                player.position;
+
+            lookPos.y =
+                boss.transform.position.y;
+
+            boss.transform.LookAt(
+                lookPos
+            );
+
+            // 前进位置
+            Vector3 nextPos =
+                boss.transform.position +
                 boss.transform.forward *
                 moveSpeed *
                 Time.deltaTime;
 
+            // 地面检测
+            RaycastHit hit;
+
+            if (
+                Physics.Raycast(
+                    nextPos +
+                    Vector3.up *
+                    groundRayHeight,
+
+                    Vector3.down,
+
+                    out hit,
+
+                    groundRayDistance
+                )
+            )
+            {
+                nextPos.y =
+                    hit.point.y;
+            }
+
+            boss.transform.position =
+                nextPos;
+
             yield return null;
         }
+
+        // 如果没被提前击杀
+        if (!deadBosses.Contains(boss))
+        {
+            StartCoroutine(
+                BossDeathSequence(boss)
+            );
+        }
+    }
+
+    // 提前击杀Boss
+    public void KillBoss(GameObject boss)
+    {
+        if (boss == null) return;
+
+        if (deadBosses.Contains(boss))
+            return;
+
+        deadBosses.Add(boss);
+
+        StartCoroutine(
+            BossDeathSequence(boss)
+        );
+    }
+
+    IEnumerator BossDeathSequence(GameObject boss)
+    {
+        Animator animator =
+            boss.GetComponent<Animator>();
+
+        AudioSource audioSource =
+            boss.GetComponent<AudioSource>();
 
         // 停止跑步音效
         if (audioSource != null)
@@ -251,12 +327,16 @@ public class BossSpawnerSequence : MonoBehaviour
         // 播放死亡动画
         if (animator != null)
         {
-            animator.Play(deathAnimation);
+            animator.Play(
+                deathAnimation
+            );
         }
 
         // 播放死亡音效
-        if (audioSource != null &&
-            deathClip != null)
+        if (
+            audioSource != null &&
+            deathClip != null
+        )
         {
             audioSource.PlayOneShot(
                 deathClip

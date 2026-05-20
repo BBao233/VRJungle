@@ -1917,7 +1917,7 @@ GameObject:
   - component: {fileID: 6970133354910566376}
   m_Layer: 0
   m_Name: Bear_4
-  m_TagString: TargetObject
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Camera0
+  - TargetObject
+  - Boss
   layers:
   - Default
   - TransparentFX

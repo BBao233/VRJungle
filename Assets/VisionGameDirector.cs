@@ -6,20 +6,22 @@ public class VisionGameDirector : MonoBehaviour
     public Light sceneLight;
 
     [Header("亮度设置")]
-    public float normalIntensity = 0.2f; // 原环境亮度
-    public float visionIntensity = 1.5f; // 夜视亮度
+    public float normalIntensity = 0.2f;
+
+    public float visionIntensity = 1.5f;
 
     [Header("激光控制")]
     public FingerBeamCaster beamCaster;
 
-    [Header("游戏参数")]
-    public TargetGenerator targetFactory;
+    [Header("Boss管理")]
+    public BossSpawnerSequence bossSpawner;
+
+    [Header("手势冷却")]
     public float gestureCooldown = 0.4f;
 
-    private bool isSessionLive = false;
     private float lastGestureTime = 0f;
 
-    // 默认保持原环境亮度
+    // 默认环境亮度
     private void Awake()
     {
         if (sceneLight != null)
@@ -28,19 +30,7 @@ public class VisionGameDirector : MonoBehaviour
         }
     }
 
-    // 开始游戏
-    public void ActivateVisionMode()
-    {
-        if (isSessionLive) return;
-
-        isSessionLive = true;
-
-        targetFactory?.StartSequence();
-
-        Debug.Log("目标游戏开始");
-    }
-
-    // ?? 开启夜视
+    // 开启夜视
     public void EnableNightVision()
     {
         if (sceneLight != null)
@@ -51,7 +41,7 @@ public class VisionGameDirector : MonoBehaviour
         Debug.Log("夜视仪开启");
     }
 
-    // ?? 关闭夜视
+    // 关闭夜视
     public void DisableNightVision()
     {
         if (sceneLight != null)
@@ -65,44 +55,33 @@ public class VisionGameDirector : MonoBehaviour
     // 射击手势
     public void OnShootGesture()
     {
-        if (!isSessionLive) return;
-        if (Time.time - lastGestureTime < gestureCooldown) return;
+        Debug.Log("检测到射击手势");
 
-        GameObject target = GameObject.FindGameObjectWithTag("TargetObject");
-
-        if (target != null)
+        // 冷却
+        if (Time.time - lastGestureTime < gestureCooldown)
         {
-            target.SetActive(false);
+            return;
+        }
 
-            lastGestureTime = Time.time;
+        lastGestureTime = Time.time;
 
-            Debug.Log("手势触发消除成功");
+        // 查找Boss
+        GameObject boss =
+            GameObject.FindGameObjectWithTag("Boss");
 
-            bool hasMore = targetFactory?.SpawnNextTarget() ?? false;
+        if (boss != null)
+        {
+            Debug.Log("找到Boss：" + boss.name);
 
-            if (!hasMore)
+            // 调用Boss死亡
+            if (bossSpawner != null)
             {
-                Debug.Log("达到目标总数，游戏结束");
-
-                EndGame();
+                bossSpawner.KillBoss(boss);
             }
         }
-    }
-
-    // 游戏结束
-    public void EndGame()
-    {
-        if (!isSessionLive) return;
-
-        isSessionLive = false;
-
-        if (beamCaster != null)
+        else
         {
-            beamCaster.ExtinguishBeam();
+            Debug.Log("没有找到Boss");
         }
-
-        targetFactory?.ClearAll();
-
-        Debug.Log("游戏结束");
     }
 }
